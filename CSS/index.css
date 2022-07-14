@@ -1,0 +1,690 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.inputContact {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+#colCarousel{
+  display:none;
+}
+.mainflags {
+  margin-top: -1vh;
+  height: 2vw;
+
+}
+
+.flags {
+ 
+  height: 2vw;
+  margin-top: -1vh;
+}
+
+#moveName {
+  margin-left: 1vw;
+  font-family: 'Ms Madi', cursive;
+  font-size: 80px;
+  z-index: 21;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-fill-mode: forwards;
+}
+
+#subtitle {
+  z-index: 10;
+  position: absolute;
+  font-size: 4vw;
+  top: calc(((100vh - 80px) / 2) + 100px);
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#page1 {
+  position: absolute;
+  height: 95vh;
+  top: 0;
+  width: 100%;
+}
+#page2 {
+  height: 100%;
+  z-index: 15;
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+
+#page3 {
+  position: relative;
+  height: 100%;
+  z-index: 17;
+  width: 100%;
+  background: white;
+}
+
+
+#page5 {
+  z-index: 18;
+  position: absolute;
+  height: 20%;
+  width: 100%;
+  top: 350%;
+  background: black;
+  color: white;
+}
+
+#navbar {
+  position: fixed;
+  margin-top: 0;
+  z-index: 20;
+  height: 40px;
+  width: 100%;
+  background-color: white;
+  padding-right: 15px;
+}
+#dropdown{
+  font-size: 20px;
+  padding: 0;
+  display:block;
+}
+#aboutNav,
+#projectsNav,
+#contactsNav {
+  font-size: 20px;
+  padding: 0;
+  display:flex; align-items:right;justify-content: right;padding-left: 10px;padding-right: 10px;
+}
+.elNav0, .elNav1, .elNav2{
+  font-size: 20px;
+}
+.charChanged {
+  font-family: 'Satisfy', cursive;
+  font-size:24px;
+}
+.charSelected{
+  font-family: 'Satisfy', cursive;
+  font-size:24px;
+  color:#FF802C
+}
+#rotIcon{
+  display: inline-block;
+  transform: rotate(0);
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.punti:after{
+  content:"";
+  animation: punti 3s ease-out infinite both;
+}
+
+@keyframes punti {
+   0%{
+    content: " ";
+  }
+
+  25% {
+    content: " . "
+
+  }
+  50%{
+    content: " . . ";
+  }
+
+  75% {
+    content: " . . . "
+
+  }
+}
+
+.spaceProject {
+  height: 8vh;
+}
+
+.projectTitle {
+  font-size: 8vw;
+  margin-bottom: 10vh;
+  line-height: 0.7em;
+  font-family: 'Historia Sky', sans-serif;
+}
+
+.projectTitle2 {
+  font-size: calc(4vh + 4vw);
+  line-height: 1;
+  font-family: 'Historia Sky', sans-serif;
+}
+.projectTitle2_2 {
+  font-size: calc(2.8vh + 2.8vw);
+  line-height: 1;
+  text-align: right;
+  font-family: 'Historia Sky', sans-serif;
+}
+
+.textProject {
+  font-size: calc(1vh + 1vw);
+}
+.textProject_2 {
+  font-size: calc(1vh + 1vw);
+  padding-left: calc((100vw / 12) * 2);
+}
+
+.box1_2 {
+  position: relative;
+  background-size: cover;
+  width: calc(100% + (100vw / 24));
+  margin-left: calc((-100vw / 24));
+  height: calc(100% + 20vh);
+  right: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.box2_2 {
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: calc(70% + 10vh);
+  transition: all 0.5s ease-in-out;
+}
+
+.box3_2 {
+  position: relative;
+  background-size: cover;
+  width: calc(100% + (100vw / 24));
+  margin-left: calc((-100vw / 24));    
+  margin-top: -30px;
+  height: calc(100% + 10vh);
+  transition: all 0.5s ease-in-out;
+}
+
+.box1_2:hover {
+  z-index: 100;
+  width: calc(100% + (100vw / 24) + 10vh);
+  margin-left: calc((-100vw / 24) - 10vh);
+  height: calc(100% + 30vh);
+  background-size: cover;
+}
+
+.box2_2:hover {
+  z-index: 100;
+  width: calc(100% + 10vh);
+  height: calc(70% + 20vh);
+  margin-top: -5vh;
+  background-size: cover;
+}
+
+.box3_2:hover {
+  z-index: 100;
+  margin-left: calc((-100vw / 24) - 10vh);
+  width: calc(10vh + 100% + (100vw / 24));
+  height: calc(100% + 25vh);
+  margin-top: -15vh;
+  background-size: cover;
+}
+
+#boxNav {
+  display: none;
+}
+
+#boxNav2 {
+  display: none;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  right:15px; 
+  
+}
+
+#top,
+#middle,
+#bot {
+  z-index: 1001;
+  margin-top: 5px;
+  background-color: black;
+  height: 5px;
+  width: 100%;
+}
+
+#boxNav2,
+#top,
+#bot {
+  transition: all 0.5s linear;
+}
+
+#middle {
+  transition: all 0.3s linear;
+
+}
+
+.labelContacts {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  padding-top: 10px;
+}
+
+.inputContact {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #d9d9d9;
+  box-sizing: border-box;
+}
+
+#h1Font {
+  margin-bottom: 0rem;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  background: #333;
+  border-bottom: 0px solid #9bd4d1;
+  line-height: 35px;
+}
+#colMessage{
+  opacity:0;
+}
+@media (min-width: 910px) {
+  #subtitle {
+    z-index: 10;
+    position: absolute;
+    font-size: 40px;
+    text-align: center;
+    top: calc(((100vh - 80px) / 2) + 100px);
+  }
+}
+@keyframes anMessage{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity:0;
+  }
+}
+.textScopri {
+  color: blue;
+  font-size: 2.5vw
+}
+
+#navElements {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#space3 {
+  height: 10vh;
+}
+
+#aboutText {
+  font-size: 2vw;
+  padding-bottom: 3vmin;
+}
+
+#photoSingle {
+  background-image: none;
+}
+
+.contactElementsMobile {
+  display: none;
+  color:white;
+}
+
+.contactElements {
+  display: flex;
+  margin-bottom: 2vmin;
+  color:white;
+}
+
+.contactSpace {
+  height: 35vh;
+}
+
+#dropdown {
+
+}
+
+#showContent {
+  cursor: pointer;
+}
+
+#content {
+  display: none;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.linkedin {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#menuNavbarMobile {
+  display: none;
+}
+
+#carouselExampleControls, #carouselExampleControls {
+  display: none;
+}
+
+.colBox3{
+  height:31vh;
+}
+.rowCarousel{
+  height:34vh;
+}
+
+
+@media (max-width: 770px) {
+.ham {
+  height:50px ;
+   cursor: pointer;
+   -webkit-tap-highlight-color: transparent;
+   transition: transform 400ms;
+   -moz-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+ }
+ .hamRotate.active {
+  
+   margin-right: 15px;
+   margin-top: -10px;
+   transform: rotate(45deg);
+ }
+ 
+ .hamRotate180.active {
+   margin-right: 15px;
+   transform:rotate(180deg);
+ }
+ .line {
+   fill:none;
+   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+   stroke:#000;
+   stroke-width:5.5;
+   stroke-linecap:round;
+ }
+ .ham5 .top {
+   stroke-dasharray: 40 82;
+ }
+ .ham5 .bottom {
+   stroke-dasharray: 40 82;
+ }
+ .ham5.active .top {
+   stroke-dasharray: 14 82;
+   stroke-dashoffset: -72px;
+ }
+ .ham5.active .bottom {
+   stroke-dasharray: 14 82;
+   stroke-dashoffset: -72px;
+ }
+ 
+  .colBox3{
+    height:auto;
+  }
+  .rowCarousel{
+    height:auto;
+  }
+  #colCarousel{
+    display:flex;
+    padding-bottom: 3vmin;
+  }
+
+  .carousel-control-prev {
+    z-index: 20;
+    height:25%;
+    background-color: black;
+    transform: translate(-100%, 150%);
+  }
+
+  .carousel-control-next {
+    z-index: 20;
+    background-color: black;
+    height:25%;
+    transform: translate(100%, 150%);
+  }
+
+  #carouselExampleControls, #carouselExampleControls2{
+    display: block;
+    width: 70%;
+    margin-left:15%;
+  }
+
+  .mainflags {
+    height: 10vw;
+    
+  }
+  
+  .flags {
+    height: 2vw;
+  }
+  .textProject {
+    font-size: calc(1vh + 1vw);
+  }
+  .textProject_2{
+    padding-left: 15px;
+  }
+  
+
+  #showContentMobile {
+width:100%;
+    cursor: pointer;
+  }
+
+  #contentMobile {
+    display: none;
+  }
+
+  #content {
+    background-color: silver;
+    flex-direction: column;
+    align-items: baseline;
+    display: none;
+  }
+
+  .navElementsMobile {
+    padding-top: 6%;
+    height: 12vh;
+    font-size: 8vw;
+    color:white;
+    text-align: center;
+  }
+
+  #menuNavbarMobile {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s linear;
+    background: #09202E;
+  }
+
+  .linkedin {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+
+  .contactSpace {
+    height: 20vh;
+  }
+
+  .contactElementsMobile {
+    display: flex;
+    font-size: calc(0.8vw + 0.8vh);
+    color:white;
+  }
+
+  .contactElements {
+    display: none;
+    margin-bottom: 2vmin;
+    color:white;
+  }
+
+  #boxNav {
+    display: block;
+  }
+
+  #photoSingle {
+    background-image: url('ImmagineProgetto.png');
+    background-size: cover;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  #photoName {
+    display: none
+  }
+
+  #boxNav2 {
+    z-index: 3000;
+    width: 50px;
+    display: block;
+  }
+
+  #navElements {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #moveName {
+    top: 70px;
+    font-size: 12vw;
+    z-index: 100;
+    font-family: 'Ms Madi', cursive;
+    top: calc((100vh - 12vw) / 2);
+    margin-left: 1vw;
+  }
+
+  .textProject {
+    font-size: calc(1vh + 1vw);
+  }
+
+  .box1_2 {
+    width: 60vw;
+    display: none;
+  }
+
+  .box2_2 {
+    display: none;
+  }
+
+  .box3_2 {
+    display: none;
+  }
+
+  .projectTitle {
+    font-size: 8vw;
+    margin-bottom: 5vw;
+    line-height: 0.7em;
+    text-align: center;
+    font-family: 'Historia Sky', sans-serif;
+  }
+
+  .projectTitle2 {
+    font-size: 8vw;
+    line-height: 1;
+    text-align: center;
+    text-size-adjust: auto;
+    padding-right:15px;
+    font-family: 'Historia Sky', sans-serif;
+  }
+  .projectTitle2_2 {
+    font-size: 8vw;
+    line-height: 1;
+    text-align: center;
+    text-size-adjust: auto;
+    font-family: 'Historia Sky', sans-serif;
+  }
+
+  .spaceProject {
+    height: 5vw;
+  }
+
+  .textScopri {
+    color: blue;
+    font-size: 4vw;
+  }
+
+
+  #space3 {
+    height: 5vw;
+  }
+
+  .aboutCol {
+    height: 100%;
+  }
+
+  #photoAbout {
+    height: 0%;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+}
+
+@media(max-width:1000px) {
+
+  #dropdown{
+    font-size: 2vw;
+  padding: 0;
+  display:block;
+  }
+  #aboutNav,
+  #projectsNav,
+  #contactsNav {
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;padding-right: 10px;
+  }
+}
+
+@media(max-width:350px){
+  .contactElementsMobile {
+    display: flex;
+    font-size: calc(0.65vw + 0.65vh);
+    color:white;
+  }
+
+  .iconContacts {
+    font-size: calc(1.5vw + 1.5vh);
+    position: relative;
+    top: calc(0.425vw + 0.425vh);
+  }
+}
+
+@media(max-width:1000px){
+  .elNav0, .elNav1, .elNav2{
+    font-size: 2vw;
+  }
+  .charChanged {
+    font-family: 'Satisfy', cursive;
+    font-size:2vw;
+  }
+  .charSelected{
+    font-family: 'Satisfy', cursive;
+  font-size:2vw;
+  color:#FF802C
+  }
+  
+  
+}

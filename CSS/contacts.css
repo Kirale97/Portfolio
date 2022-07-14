@@ -1,0 +1,74 @@
+#page4 {
+  position: relative;
+  z-index: 18;
+  width: 100%;
+  background: #09202E;
+  color:white;
+}
+
+.contactSubtitle {
+  font-size: calc(1vw + 2vh);
+  color: #FF802C;
+}
+
+.contactTitle {
+  font-size: 8vw;
+  line-height: 1;
+  font-family: 'Historia Sky', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white
+}
+
+a:hover {
+  text-decoration: none;
+  color: #FF802C;
+}
+
+.rowScopri{
+  height:10vh; 
+  align-content: end;
+  padding-bottom:2vmin;
+  margin-top:-30px;
+}
+#buttonContact{
+  border-radius: 0;
+  box-shadow: none;
+  border-color: transparent;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  height:35px;
+  background-color:#FF802C;
+}
+.iconContacts {
+  font-size: calc(1.7vw + 1.7vh);
+  position: relative;
+  top: calc(0.45vw + 0.45vh);
+}
+.contactSubtitleParent{
+  display:visible;
+}
+@media(max-width:770px) {
+  .contactElements {}
+
+  .contactTitle {
+    font-size: calc(4vw + 4vh);
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    font-family: 'Historia Sky', sans-serif;
+  }
+  .rowScopri{
+    height:auto; 
+    padding-top:40px;
+    align-content: end;
+  padding-bottom:2vmin;
+  }
+   .contactSubtitle{
+    display:none;
+  }
+  .contactSubtitleParent{
+    display:none;
+  }
+}

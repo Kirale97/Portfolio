@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twbs/bootstrap": "^5.1",
+        "slim/php-view": "^3.1"
+    }
+}

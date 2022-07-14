@@ -1,0 +1,265 @@
+.icon {
+  position: relative;
+  z-index: 10;
+  font-size: 50px;
+}
+
+.divIcon {
+
+  z-index: 16;
+  margin-top: 90vh;
+  transition: margin-top 2s linear;
+}
+
+#aboutIcons {
+  padding-top: 14px;
+}
+
+#icon6:hover {
+  color: rgb(67, 170, 230)
+}
+
+#icon5:hover {
+  color: rgb(35, 226, 243)
+}
+
+#icon1:hover {
+  color: orange
+}
+
+#icon2:hover {
+  color: yellow
+}
+
+#icon3:hover {
+  color: rgb(6, 6, 149)
+}
+
+#icon4:hover {
+  color: red
+}
+
+
+#textIcon1 {
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+.icon:hover {
+  font-size: 60px;
+}
+
+#icon1:hover+#textIcon1 {
+
+  animation: anima 1s ease-out 1 both;
+}
+
+#textIcon2 {
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+#icon2:hover+#textIcon2 {
+  animation: anima 1s ease-out 1 both;
+}
+
+#textIcon3 {
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+#icon3:hover+#textIcon3 {
+  animation: anima 1s ease-out 1 both;
+}
+
+#textIcon4 {
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+#icon4:hover+#textIcon4 {
+  animation: anima 1s ease-out 1 both;
+}
+
+#textIcon5 {
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+#icon5:hover+#textIcon5 {
+  animation: anima 1s ease-out 1 both;
+}
+
+#textIcon6 {
+  position: relative;
+  top: -40px;
+  font-size: 20px;
+}
+
+#icon6:hover+#textIcon6 {
+  animation: anima 1s ease-out 1 both;
+}
+
+@keyframes anima {
+  from {
+
+    top: -30px;
+  }
+
+  to {
+
+    top: 0px;
+
+
+  }
+}
+
+.coverText {
+  position: absolute;
+  z-index: 4;
+  background: black;
+  height: 50px;
+  width: 100%;
+}
+
+
+#aboutTitle {
+  font-size: calc(3.5vw + 3.5vh);
+  margin-left: 100%;
+  margin-top: 5px;
+  transition: all 1s linear;
+  font-family: 'Historia Sky', sans-serif;
+}
+
+.name2 {
+  text-align: center;
+}
+
+.char {
+  font-size: calc(1vw + 1vh);
+  height: calc(1vw + 1vh);
+  animation: an 1s ease-out 1 both;
+  display: inline-block;
+}
+
+@keyframes an {
+  from {
+    opacity: 0;
+    transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: perspective(500px) translate3d(0, 0, 0);
+
+  }
+}
+
+.divIcon {
+  height: 60px;
+}
+
+#calcPage2{
+  position:absolute; 
+  width:100%; 
+  padding-bottom: calc(10vh + 140px);
+  color:black;
+}
+#calcPage2 div div{
+  font-size: 2vw;
+}
+@media(max-width:770px) {
+  #calcPage2{
+    position:absolute; 
+    width:100%; 
+    font-size:calc(2.2vw + 2.2vh);
+    padding-bottom: calc(10vh + 140px)
+  }
+  #calcPage2 div div{
+    font-size:calc(2.2vw + 2.2vh);
+  }
+  
+  #aboutIcons {
+    padding-top: calc(1.5vw + 1.5vh);
+    padding-bottom: calc(1.5vw + 1.5vh);
+  }
+
+  .char {
+    font-size: calc(2.2vw + 2.2vh);
+    height: calc(2.2vw + 2.2vh);
+    animation: an 1s ease-out 1 both;
+    display: inline-block;
+  }
+
+  .divIcon {
+    height: 40px;
+  }
+
+  .icon {
+    font-size: 40px;
+    color:white;
+  }
+
+  #icon6 {
+    color: white;
+  }
+
+  #icon5 {
+    color: rgb(35, 226, 243)
+  }
+
+  #icon1 {
+    color: orange
+  }
+
+  #icon2 {
+    color: yellow
+  }
+
+  #icon3 {
+    color: rgb(6, 6, 149)
+  }
+
+  #icon4 {
+    color: red
+  }
+
+  #icon1:hover+#textIcon1 {
+
+    animation: animaz 1s ease-out 1 both;
+  }
+
+  #icon2:hover+#textIcon2 {
+
+    animation: animaz 1s ease-out 1 both;
+  }
+
+  #icon3:hover+#textIcon3 {
+
+    animation: animaz 1s ease-out 1 both;
+  }
+
+  #icon4.divIcon+#textIcon4 {
+
+    animation: animaz 1s ease-out 1 both;
+  }
+
+  #icon5:hover+#textIcon5 {
+
+    animation: animaz 1s ease-out 1 both;
+  }
+
+  #icon6:hover+#textIcon6 {
+
+    animation: animaz 1s ease-out 1 both;
+  }
+
+  .icon:hover {
+    font-size: 40px;
+  }
+}
